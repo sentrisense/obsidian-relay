@@ -182,7 +182,7 @@ const context = await esbuild.context({
 		HEALTH_URL: `"${healthUrl}"`,
 		API_URL: `"${apiUrl}"`,
 		AUTH_URL: `"${authUrl}"`,
-		REPOSITORY: `"inakimalerba/syncthing-relay"`,
+		REPOSITORY: `"sentrisense/obsidian-relay"`,
 	},
 	treeShaking: true,
 	outfile,

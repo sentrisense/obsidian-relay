@@ -1,7 +1,7 @@
 name: Control plane image
 
 # Builds control-plane/. Pull requests only build; main pushes
-# ghcr.io/inakimalerba/relay-control-plane tagged with the commit sha and latest.
+# ghcr.io/sentrisense/relay-control-plane tagged with the commit sha and latest.
 # Infra pins the sha.
 
 on:
@@ -40,7 +40,7 @@ jobs:
         platforms: linux/amd64
         push: ${{ github.event_name != 'pull_request' }}
         tags: |
-          ghcr.io/inakimalerba/relay-control-plane:${{ github.sha }}
-          ghcr.io/inakimalerba/relay-control-plane:latest
+          ghcr.io/sentrisense/relay-control-plane:${{ github.sha }}
+          ghcr.io/sentrisense/relay-control-plane:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
